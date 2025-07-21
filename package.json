@@ -1,0 +1,22 @@
+{
+  "name": "agent-377",
+  "version": "1.0.0",
+  "description": "ERC-377: AI Agent NFT Standard with Twitter Integration",
+  "main": "ai/agentRunner.js",
+  "scripts": {
+    "start": "node ai/agentRunner.js",
+    "deploy": "node scripts/deploy.js",
+    "mint": "node scripts/mintAgent.js",
+    "tweet": "node twitter/postTweet.js",
+    "zkml": "python3 ai/zk_prover.py"
+  },
+  "author": "YourName",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.0",
+    "openai": "^4.0.0",
+    "twitter-api-v2": "^1.16.0"
+  }
+}
